@@ -13,6 +13,17 @@ class ll{
         newNode.next=head;
         head=newNode;
     }
+    public void insertatlast(int data){
+        Node newNode= new Node(data);
+        Node head = temp;
+        while(temp!=null){
+            temp=temp.next;
+        }
+        temp.next=newNode;
+    }
+    public void deleteatfirst(){
+        head=head.next;
+    }
     public void display(){
         Node temp=head;
         while(temp!=null){
@@ -22,8 +33,8 @@ class ll{
                 System.out.print("null");
             }
         }
-        
     } 
+
 }
 class SinglyLinkedList {
     public static void main(String[] args) {
@@ -31,6 +42,7 @@ class SinglyLinkedList {
         list.insertatfirst(10);
         list.insertatfirst(20);
         list.insertatfirst(30);
+        list.deleteatfirst();
         list.display();
         
     }
