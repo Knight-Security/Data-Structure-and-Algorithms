@@ -29,6 +29,13 @@ class dll{
         }
         
     }
+    public void deletelast(){
+        Node temp = head;
+        while (temp.next !=null){
+            temp=temp.next;
+        }
+        temp.prev.next=null;
+    }
     public void display(){
         Node temp=head;
         while(temp != null){
@@ -50,7 +57,8 @@ class DoublyLinkedListDeletion {
         dll.insertfirst(30);
         dll.insertfirst(40);
         dll.insertfirst(50);
-        dll.deletefirst();
+        //dll.deletefirst();
+        //dll.deletelast();
         dll.display();
         
     }
