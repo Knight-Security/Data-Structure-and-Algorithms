@@ -37,7 +37,7 @@ class Binarytree{
 }
 class BinaryTree {
     public static void main(String[] args) {
-       BinaryTree tree = new Binarytree();
+       BinaryTree tree = new BinaryTree();
 
         tree.root = tree.insert(tree.root, 50);
         tree.root = tree.insert(tree.root, 30);
