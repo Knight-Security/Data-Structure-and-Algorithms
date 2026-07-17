@@ -31,7 +31,7 @@ class BinaryTree{
        preorder(root.right);
     }
 }
-class Main {
+class PreorderTraversal {
     public static void main(String[] args) {
        BinaryTree tree = new BinaryTree();
 
